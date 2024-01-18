@@ -18,7 +18,7 @@ theme:
     - content.code.annotate
     - content.code.copy
     # - content.code.select
-    # - content.tabs.link
+    - content.tabs.link
     - content.tooltips
     # - header.autohide
     # - navigation.expand
@@ -76,6 +76,7 @@ nav:
   #  - دوره کار با داده‌های جهانی: courses/global-data.md
   - ترفندها: 
     - فهرست: hacks/index.md
+    - افزودن نقشه پایه: hacks/basemaps.md
     #- Adding a landing page: setup/adding-a-landing-page.md
   - درباره: about.md
   - تماس: contact.md
