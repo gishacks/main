@@ -75,7 +75,7 @@ nav:
   #  - معرفی: courses/index.md
   #  - دوره کار با داده‌های جهانی: courses/global-data.md
   - ترفندها: 
-    - فهرست: hacks/index.md
+    - ترفندها: hacks/index.md
     - افزودن نقشه پایه: hacks/basemaps.md
     #- Adding a landing page: setup/adding-a-landing-page.md
   - درباره: about.md
