@@ -68,7 +68,7 @@ extra:
       link: https://github.com/gishacks
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/gishacks
-
+extra_css: [extra.css]
 nav:
   - Home: index.md
   #- دوره‌های آموزشی:
