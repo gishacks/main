@@ -1,7 +1,8 @@
  «ترفندهای GIS» برای توسعه مهارت‌های افراد آشنا با GIS طراحی شده است. تا با استفاده از آن بتوانند دانش خود را در این زمینه ارتقا دهند.
-<div class="grid cards" markdown>
 
 - :fontawesome-solid-lightbulb: [__نقشه پایه__](basemaps/) – افزودن نقشه‌های پایه و عکس‌های ماهواره‌ای
+<div class="grid cards" markdown>
+- :fontawesome-solid-lightbulb: __نقشه‌‌های ارتفاعی__ – تهیه نقشه‌های حرارتی از لایه نقاط
 - :fontawesome-solid-lightbulb: __نقشه‌‌های حرارتی__ – تهیه نقشه‌های حرارتی از لایه نقاط
 - :fontawesome-solid-lightbulb: __نقشه پوشش زمین__ – تهیه نقشه پوشش زمین از تحلیل عکس‌های هوایی
 - :fontawesome-solid-lightbulb: __تحلیل حوزه‌های آب‌خیز__ – نقشه مسیر حرکت آب‌های سطحی و حوزه‌های آبخیز
