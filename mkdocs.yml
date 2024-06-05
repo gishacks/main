@@ -8,6 +8,22 @@ plugins:
       blog_dir: . 
   - search
   - tags
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
 
 theme:
   custom_dir: docs/overrides
@@ -71,9 +87,6 @@ extra:
 extra_css: [extra.css]
 nav:
   - Home: index.md
-  #- دوره‌های آموزشی:
-  #  - معرفی: courses/index.md
-  #  - دوره کار با داده‌های جهانی: courses/global-data.md
   - ترفندها: 
     - ترفندها: hacks/index.md
     - افزودن نقشه پایه: hacks/basemaps.md
@@ -81,6 +94,9 @@ nav:
     - تحلیل حوزه آب‌خیز: hacks/watershed.md
     - نقشه پوشش زمین: hacks/landcover.md
     #- Adding a landing page: setup/adding-a-landing-page.md
+  - دوره‌های آموزشی:
+    - دوره‌های آموزشی: courses/index.md
+    - کار با داده‌های جهانی: courses/global-data.md
   - درباره: about.md
   - تماس: contact.md
 

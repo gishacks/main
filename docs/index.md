@@ -7,14 +7,14 @@ hide:
 وب‌سایت GIS Hacks به منظور آموزش و به‌اشتراک‌گذاری ترفند‌های GIS راه‌اندازی شده است، و قصد دارد تا به گسترش استفاده از داده‌های مکانی در تحلیل‌های شهری، محیطی، اجتماعی، اقتصادی، و سیاسی کمک کند. راهنماها و دوره‌های آموزشی به مرور در این وبسایت تکمیل خواهد شد.
 
 <div class="grid cards" markdown>
--   :material-lightbulb-on:{ .lg .middle } [__ترفندها__](hacks/)
+-   :material-lightbulb-on:{ .lg .middle } [__ترفندها__](hacks/index.md)
 
     ---
 
     مجموعه‌ای از ترفندها در کار حرفه‌ای با GIS
 
 
--   :material-clock-fast:{ .lg .middle } __دوره‌ها__
+-   :material-clock-fast:{ .lg .middle } [__دوره‌ها__](courses/index.md)
 
     ---
 
