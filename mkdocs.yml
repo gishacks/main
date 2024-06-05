@@ -79,6 +79,7 @@ nav:
     - افزودن نقشه پایه: hacks/basemaps.md
     - نقشه حرارتی زمان‌مند: hacks/heatmaps.md
     - تحلیل حوزه آب‌خیز: hacks/watershed.md
+    - نقشه پوشش زمین: hacks/landcover.md
     #- Adding a landing page: setup/adding-a-landing-page.md
   - درباره: about.md
   - تماس: contact.md
