@@ -3,9 +3,28 @@
   -#}
   {% extends "main.html" %}
   {% block header %}
-    <main>
+    <section class="main">
       <div class="video">
-
+        <script type="text/javascript" src="/assets/js/nodes.js"></script>
+        <script type="text/javascript">
+            var nodesjs = new NodesJs({
+                id: 'nodes',
+                width: window.innerWidth,
+                height: window.innerHeight,
+                particleSize: 2,
+                lineSize: 1,
+                particleColor: [255, 255, 255, 0.3],
+                lineColor: [255, 255, 255],
+                backgroundFrom: [10, 25, 100],
+                backgroundTo: [25, 50, 150],
+                backgroundDuration: 4000,
+                nobg: false,
+                number: window.hasOwnProperty('orientation') ? 30: 100,
+                speed: 20,
+                pointerCircleRadius: 150
+            });
+        </script>
+        <canvas id="nodes"></canvas>
 
         <div class="wave"></div>
         <div class="wave"></div>
@@ -19,13 +38,13 @@
             <a href="{{ 'hacks/' | url }}" title="ترفندها" class="md-button md-button--primary">
               ترفندها
             </a>
-            <a href="{{ 'courses/' | url }}" title="دوره‌ها" class="md-button">
+            <a href="{{ 'courses/' | url }}" title="دوره‌ها" class="md-button md-button--primary">
             دوره‌ها
           </a>
         </div>
 
       </div>
-    </main>
+    </section>
     {{ super() }}
 
   
@@ -43,4 +62,5 @@
       <p>وب‌سایت ترفند‌های GIS به منظور آموزش و به‌اشتراک‌گذاری ترفند‌های GIS راه‌اندازی شده است، و قصد دارد تا به گسترش استفاده از داده‌های مکانی در تحلیل‌های شهری، محیطی، اجتماعی، اقتصادی، و سیاسی کمک کند. راهنماها و دوره‌های آموزشی به مرور در این وبسایت تکمیل خواهد شد.
       </p>
   </div>
+
   {% endblock %}
