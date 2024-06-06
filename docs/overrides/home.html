@@ -2,26 +2,45 @@
     This file was automatically generated - do not edit
   -#}
   {% extends "main.html" %}
-  {% block tabs %}
-    {{ super() }}
-    <section class="mdx-container">
-      <div class="md-grid md-typeset">
-        <div class="mdx-hero">
-          <div class="mdx-hero__image">
-          </div>
-          <div class="mdx-hero__content">
-            <h1>Technical documentation that just works</h1>
-            <p>{{ config.site_description }}. Set up in 5 minutes.</p>
-            <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
-              Quick start
-            </a>
-            <a href="{{ 'insiders/' | url }}" title="Material for MkDocs Insiders" class="md-button">
-              Get Insiders
-            </a>
-          </div>
-        </div>
+  {% block header %}
+    <main>
+      <div class="video">
+
+
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
       </div>
-    </section>
+      <div class="main-content">
+        <img src="/assets/logo.png" height="150px">
+          <h1>آموزش ترفند‌های GIS</h1>
+          <p>برای معنادار ساختن انبوده داده‌های مکانی در تحلیل‌های شهری، محیطی، اجتماعی، اقتصادی، و سیاسی</p>
+          <div class="md-typeset">
+            <a href="{{ 'hacks/' | url }}" title="ترفندها" class="md-button md-button--primary">
+              ترفندها
+            </a>
+            <a href="{{ 'courses/' | url }}" title="دوره‌ها" class="md-button">
+            دوره‌ها
+          </a>
+        </div>
+
+      </div>
+    </main>
+    {{ super() }}
+
+  
   {% endblock %}
-  {% block content %}{% endblock %}
-  {% block footer %}{% endblock %}
+  {% block tabs %}
+  <div>
+    {{ super() }}
+  </div>
+  
+
+    {% endblock %}
+  {% block content %}
+  <div class="body-content">
+      <h2>درباره ما</h2>
+      <p>وب‌سایت ترفند‌های GIS به منظور آموزش و به‌اشتراک‌گذاری ترفند‌های GIS راه‌اندازی شده است، و قصد دارد تا به گسترش استفاده از داده‌های مکانی در تحلیل‌های شهری، محیطی، اجتماعی، اقتصادی، و سیاسی کمک کند. راهنماها و دوره‌های آموزشی به مرور در این وبسایت تکمیل خواهد شد.
+      </p>
+  </div>
+  {% endblock %}
