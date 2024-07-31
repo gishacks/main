@@ -97,6 +97,7 @@ nav:
   - دوره‌های آموزشی:
     - دوره‌های آموزشی: courses/index.md
     - کار با داده‌های جهانی: courses/global-data.md
+    - ورود به دنیای برنامه‌نویسی پایتون در GIS: courses/pygis101.md
   - درباره: about.md
   - تماس: contact.md
 
