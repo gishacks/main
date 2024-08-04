@@ -1,6 +1,5 @@
 ---
 title: تماس
-template: home.html
 hide:
   - navigation
   - toc

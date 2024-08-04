@@ -1,6 +1,5 @@
 ---
 title: درباره
-template: home.html
 hide:
   - navigation
   - toc
