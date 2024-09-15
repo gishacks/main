@@ -121,3 +121,18 @@
         transform: translateX(1);
     }
 }
+
+a.dl-shp:link, a.dl-shp:visited {
+    font-family: monospace;
+    font-size: smaller;
+    background-color: inherit;
+    color: inherit;
+    padding: 1px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a.dl-shp:hover, a.dl-shp:active {
+  }
+  
