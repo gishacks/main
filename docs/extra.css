@@ -136,3 +136,7 @@ a.dl-shp:link, a.dl-shp:visited {
   a.dl-shp:hover, a.dl-shp:active {
   }
   
+  code {
+    direction: ltr;
+  text-align: left;
+  }
