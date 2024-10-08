@@ -104,7 +104,7 @@ f. برای اطمینان از درستی انجام مراحل قبل اولی
     print('Number of a: '+str(count))
     ```
 
-۴ تعریف تابع Function
+۴. تعریف تابع Function
 
     ```python
     def countChr(c, t):
@@ -116,6 +116,7 @@ f. برای اطمینان از درستی انجام مراحل قبل اولی
         print('Number of '+c+': '+ str(count))
     countChr('d', name)
     ```
+
 ### کار با فایل
 ۱. تعداد فراوانی یک کلمه در یک فایل نوشتاری
 
