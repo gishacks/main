@@ -2,8 +2,6 @@
 title: جلسه دوم - وکتور
 level: secret
 ---
-<div class="sp-embed-player" data-id="cZ6jb6VWbla"><script src="https://go.screenpal.com/player/appearance/cZ6jb6VWbla"></script><iframe width="100%" height="400px" style="border:0;" scrolling="no" src="https://go.screenpal.com/player/cZ6jb6VWbla?width=100%&height=100%&ff=1&title=0" allowfullscreen="true"></iframe></div>
-
 ## کار با Pandas
 ### ۱. نصب
 
