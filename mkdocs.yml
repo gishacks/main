@@ -10,7 +10,7 @@ plugins:
   - encryptcontent:
       password_inventory:
         secret:
-            user1: !ENV PASSWORD1_FROM_ENV
+            user1: !!python/object/apply:os.getenv ["PASSWORD1_FROM_ENV"]
   - tags
   - glightbox:
       touchNavigation: true
