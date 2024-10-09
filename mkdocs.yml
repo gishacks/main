@@ -13,6 +13,7 @@ plugins:
       placeholder: 'پسورد'
       placeholder_user: 'نام کاربری'
       password_button_text: 'ورود'
+      password_button: True
       decryption_failure_message: 'نام کاربری یا پسورد اشتباه است..'
       encryption_info_message: 'نیاز به تأیید مجدد.'  
       remember_keys: true # keys from keystore will temporarily saved to sessionStorage
