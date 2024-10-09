@@ -10,7 +10,7 @@ plugins:
   - encryptcontent:
       password_inventory:
         secret:
-            user1: ${{ secrets.PASSWORD1_FROM_ENV }}
+            user1: !ENV PASSWORD1_FROM_ENV
   - tags
   - glightbox:
       touchNavigation: true
