@@ -24,8 +24,9 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-          PASSWORD1_FROM_ENV: ${{ secrets.PASSWORD1_FROM_ENV }}
       - run: pip install mkdocs-material 
       - run: pip install mkdocs-glightbox
       - run: pip install mkdocs-encryptcontent-plugin
+        with:
+          PASSWORD1_FROM_ENV: ${{ secrets.PASSWORD1_FROM_ENV }}
       - run: mkdocs gh-deploy --force
