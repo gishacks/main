@@ -24,12 +24,10 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - name: 'Create env file'
-        run: |
-          touch .env
-          echo PASSWORD1_FROM_ENV=${{ secrets.PASSWORD1_FROM_ENV }} >> .env
-          cat .env
       - run: pip install mkdocs-material 
       - run: pip install mkdocs-glightbox
       - run: pip install mkdocs-encryptcontent-plugin
-      - run: mkdocs gh-deploy --force
+      - name: deploy mkdocs
+        with:
+          PASSWORD1_FROM_ENV: ${{ secrets.PASSWORD1_FROM_ENV }}
+        run: mkdocs gh-deploy --force

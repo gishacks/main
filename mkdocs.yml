@@ -7,10 +7,7 @@ plugins:
   - blog:
       blog_dir: . 
   - search
-  - encryptcontent:
-      password_inventory:
-        secret:
-            user1: !ENV PASSWORD1_FROM_ENV
+  - encryptcontent: {}
   - tags
   - glightbox:
       touchNavigation: true
