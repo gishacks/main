@@ -113,7 +113,8 @@ nav:
     - کار با داده‌های جهانی: courses/global-data.md
     - ورود به دنیای برنامه‌نویسی پایتون در GIS: 
       - معرفی دوره: courses/pygis101.md
-      - جلسه ۱: courses/pygis101/session1.md
+      - جلسه ۱-مبانی: courses/pygis101/session1.md
+      - جلسه ۲-وکتور: courses/pygis101/session2.md
   - درباره: about.md
   - تماس: contact.md
 

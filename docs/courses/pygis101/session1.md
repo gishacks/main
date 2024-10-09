@@ -1,5 +1,4 @@
 ---
-title: جلسه اول - مبانی
 level: secret
 ---
 
