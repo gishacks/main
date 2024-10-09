@@ -1,5 +1,4 @@
 ---
-title: جلسه دوم - وکتور
 level: secret
 ---
 ## کار با Pandas
