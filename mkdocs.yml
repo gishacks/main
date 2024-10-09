@@ -7,6 +7,10 @@ plugins:
   - blog:
       blog_dir: . 
   - search
+  - encryptcontent:
+      password_inventory:
+        secret:
+            user1: ${{ secrets.PASSWORD1_FROM_ENV }}
   - tags
   - glightbox:
       touchNavigation: true
@@ -28,6 +32,7 @@ plugins:
 theme:
   custom_dir: docs/overrides
   features:
+    - navigation.indexes 
     - announce.dismiss
     - content.action.edit
     - content.action.view
@@ -97,7 +102,9 @@ nav:
   - دوره‌های آموزشی:
     - دوره‌های آموزشی: courses/index.md
     - کار با داده‌های جهانی: courses/global-data.md
-    - ورود به دنیای برنامه‌نویسی پایتون در GIS: courses/pygis101.md
+    - ورود به دنیای برنامه‌نویسی پایتون در GIS: 
+      - معرفی دوره: courses/pygis101.md
+      - جلسه ۱: courses/pygis101/session1.md
   - درباره: about.md
   - تماس: contact.md
 
