@@ -8,9 +8,16 @@ plugins:
       blog_dir: . 
   - search
   - encryptcontent:
+      title_prefix: '[مخصوص شرکت‌کنندگان]'
+      summary: 'این صفحه شامل مجموعه یادداشت‌های جلسات دوره است و برای شرکت‌کنندگان دوره قابل دسترس است'
+      placeholder: 'پسورد'
+      placeholder_user: User
+      password_button_text: 'ورود'
+      decryption_failure_message: 'نام کاربری یا پسورد اشتباه است..'
+      encryption_info_message: 'نیاز به تأیید مجدد.'  
       password_inventory:
         secret:
-            user1: !ENV PASSWORD1_FROM_ENV
+            pygis1: !ENV PASSWORD1_FROM_ENV
   - tags
   - glightbox:
       touchNavigation: true
