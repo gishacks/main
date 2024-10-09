@@ -8,10 +8,10 @@ plugins:
       blog_dir: . 
   - search
   - encryptcontent:
-      title_prefix: '[مخصوص شرکت‌کنندگان]'
+      title_prefix: '[x]'
       summary: 'این صفحه شامل مجموعه یادداشت‌های جلسات دوره است و برای شرکت‌کنندگان دوره قابل دسترس است'
       placeholder: 'پسورد'
-      placeholder_user: User
+      placeholder_user: 'نام کاربری'
       password_button_text: 'ورود'
       decryption_failure_message: 'نام کاربری یا پسورد اشتباه است..'
       encryption_info_message: 'نیاز به تأیید مجدد.'  
