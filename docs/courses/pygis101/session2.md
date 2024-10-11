@@ -153,3 +153,38 @@ parcel_data_1375 = parcel_data_1375.to_crs(parcel_data_1385.crs)
     map = changed_parcels.explore("luChange", cmap="Blues")
     map.save('draft/map.html')
     ```
+
+## تمرین
+در کد زیر x و y چه چیز ویژگی از قطعه را در خود ذخیره می‌کنند.
+
+```python
+import geopandas as gpd
+import shapely
+import math
+parcels = gpd.read_file("parcel.shp")
+for idx, feature in parcels.iterrows():
+    parcel = feature['geometry'].simplify(tolerance=0.05)
+    coords = list(parcel.boundary.coords)
+    temp = []
+    for a, b in zip(coords,coords[1:]):
+        c = shapely.LineString([a,b]).length
+        d = math.degrees(math.atan2(b[1]-a[1], b[0]-a[0]))
+        temp.append({'c': c, 'd':d})    
+    e = max(temp, key=lambda x: x['c'])
+    parcels.loc[idx, 'x']= e['c']
+    parcels.loc[idx, 'y']= e['d']
+parcels.to_file('parcelx.shp')
+```
+
+!!! نکته
+    ۱. کتابخانه [shapely](https://shapely.readthedocs.io/en/stable/manual.html) یکی از کتابخانه‌های پرکاربرد پایتون است که بیشتر برای ترسیم عوارض وکتوری استفاده می‌شود. این کتابخانه همراه GeoPandas نصب می‌شود و نیازمند نصب مجدد نیست.
+
+        ```python
+        point = shapely.Point(x,y)
+        line = shapely.LineString([(x1,y1), (x2,y2)])
+        polygon = shapely.Polygon([(x1,y1), (x2,y2), (x3,y3)])
+        ```
+    ۲. کتابخانه [math](https://docs.python.org/3/library/math.html) برای انجام محاسبات ریاضی استفاده می‌شود. این کتابخانه از کتابخانه‌های درونی پایتون است و همراه با پایتون نصب می‌شود.
+
+
+    ۳. دستور [zip](https://www.w3schools.com/python/ref_func_zip.asp) تناظر یک به یک بین عناصر هم جایگاه در دو [tuple](https://www.w3schools.com/python/python_tuples.asp) را ایجاد می‌کند.
