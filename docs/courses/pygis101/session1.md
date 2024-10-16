@@ -10,7 +10,7 @@ level: secret
 !!! نکته
     در مراحل نصب *حتماً* تیک Add Python to Path را بزنید.
         <figure markdown>
-        ![](assets/pygis101-1.png)
+        ![](../../assets/pygis101-1.png)
         <figcaption></figcaption>
         </figure>
 
@@ -59,7 +59,7 @@ d. با میان‌بر زیر صفحه دستورهای vscode را فرا بخ
 e. بعد از باز شدن صفحه Jupyter Notebook گزینه Select Kernel را زده و از Existing Python Environment محیط مجازی ساخته شده در مرحله قبل را انتخاب کنید.
 
 <figure markdown>
-![](assets/pygis101-2.png)
+![](../../assets/pygis101-2.png)
 <figcaption></figcaption>
 </figure>
 
