@@ -1,0 +1,142 @@
+.language-text {
+    direction: ltr;
+    text-align: left;
+}
+
+.main {
+    height: calc(100vh - 50px);
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20em;
+    color: white;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+.main-content {
+    text-align: center;
+    z-index: 1;
+}
+
+.main-content h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* Body content styles */
+.body-content {
+    padding: 50px;
+    text-align: center;
+    height: calc(100vh - 100px);
+}
+
+/* Footer styles */
+.home-footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.home-footer p {
+    font-size: 1.2em;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: var(--md-primary-fg-color);
+    border-radius: 1000% 1000% 0 0;
+    position: absolute;
+    width: 200%;
+    height: 20em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+a.dl-shp:link, a.dl-shp:visited {
+    font-family: monospace;
+    font-size: smaller;
+    background-color: inherit;
+    color: inherit;
+    padding: 1px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a.dl-shp:hover, a.dl-shp:active {
+  }
+  
+  code {
+    direction: ltr;
+  text-align: left;
+  }
